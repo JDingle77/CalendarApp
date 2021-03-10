@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, SafeAreaView, Button } from 'react-nativ
 import { StatusBar } from 'expo-status-bar';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import TaskInput from './TextInput.js';
  
 function Home({ navigation }) {
    return (
@@ -196,6 +197,9 @@ function Tasks() {
      <SafeAreaView style={styles.container}>
        <StatusBar style="auto" />
        <View style={styles.tcol}>
+         <View style={styles.trow}>
+           <TaskInput />
+         </View>
          <View style={styles.trow}>
            <Text style = {styles.month}>•BBALL</Text>
          </View>
