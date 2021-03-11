@@ -1622,6 +1622,49 @@ function MyStack() {
  );
 }
  
+function CurStack() {
+   return (
+    <Stack.Navigator>
+      <Stack.Screen
+       name="Current Month"
+       component={CurrentMonth}
+       />
+      <Stack.Screen
+       name="Basketball"
+       component={Basketball}
+       />
+      <Stack.Screen
+       name="CompSci"
+       component={CompSci}
+       />
+      <Stack.Screen
+       name="Devos"
+       component={Devos}
+       />
+      <Stack.Screen
+       name="Grip"
+       component={Grip}
+       />
+      <Stack.Screen
+       name="Healthy"
+       component={Healthy}
+       />
+      <Stack.Screen
+       name="Music"
+       component={Music}
+       />
+      <Stack.Screen
+       name="PullUps"
+       component={PullUps}
+       />
+     <Stack.Screen
+       name="Skincare"
+       component={Skincare}
+       />
+    </Stack.Navigator>
+   );
+}
+
 const Tab = createBottomTabNavigator();
  
 function MyTabs() {
@@ -1634,6 +1677,10 @@ function MyTabs() {
            <Tab.Screen
                name="Tasks"
                component={Tasks}
+           />
+           <Tab.Screen
+               name="Current Month"
+               component={CurStack}
            />
        </Tab.Navigator>
    );
